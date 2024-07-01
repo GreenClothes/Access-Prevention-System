@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_centerInParent="true"
+        android:background="#FFCDD2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/mainname"/>
+
+    <TextView
+        android:id="@+id/mainname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/nnsq_h"
+        android:gravity="center"
+        android:text="교출 관리 시스템"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/underline"
+        app:layout_constraintVertical_bias="0.712"/>
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_centerInParent="true"
+        android:background="#FFCDD2"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/school" />
+
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="현재는 교출 학생이 없습니다."
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_photo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/main_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/school_protect"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/student_list_btn"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <Button
+        android:id="@+id/student_list_btn"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape_box"
+        android:drawableLeft="@drawable/list_pic_xml"
+        android:fontFamily="@font/nanumbarungothic"
+        android:paddingLeft="20dp"
+        android:text="학생별 교출 이력"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/monitoring"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/alert_btn"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/shape_box_alarm"
+        android:drawableLeft="@drawable/alarm_pic_xml"
+        android:fontFamily="@font/nanumbarungothic"
+        android:paddingLeft="20dp"
+        android:text="@string/alert_btn_txt"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/searching_area"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape_box"
+        android:drawableLeft="@drawable/search_pic_xml"
+        android:fontFamily="@font/nanumbarungothic"
+        android:paddingLeft="20dp"
+        android:text="교직원별 수색구역 배치표"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/alert_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/monitoring"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape_box"
+        android:drawableLeft="@drawable/monitor_pic_xml"
+        android:fontFamily="@font/nanumbarungothic"
+        android:paddingLeft="20dp"
+        android:text="현재 교내 상황 모니터링"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/searching_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

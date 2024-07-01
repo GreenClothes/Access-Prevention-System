@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">교출 관리 시스템</string>
+    <string name="alert_btn_txt"><u>교출 학생 발견 시 알림 버튼</u></string>
+</resources>

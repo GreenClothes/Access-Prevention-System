@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_temp4</item>
+    </style>
+
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">#696969</item> <!-- 원하는 색상으로 변경 -->
+        <item name="colorControlActivated">#696969</item> <!-- 원하는 색상으로 변경 -->
+        <item name="colorControlHighlight">#696969</item> <!-- 원하는 색상으로 변경 -->
+    </style>
+</resources>
