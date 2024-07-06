@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         public void run() {
             try {
                 // 서버에 연결
-                String serverIP = "192.168.75.79";
+                String serverIP = "SERVER_IP";
                 int port = 9000;
                 socket = new Socket(serverIP, port);
                 while(true) {
