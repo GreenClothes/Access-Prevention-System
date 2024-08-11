@@ -138,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
         public void run() {
             try {
                 // 서버에 연결
-                String serverIP = "192.168.75.79";
-                int port = 9000;
+                String serverIP = "SERVER_IP";
+                int port = PORT;
                 socket = new Socket(serverIP, port);
                 while(true) {
                     // 이미지 데이터 수신
